@@ -1,0 +1,60 @@
+body{
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+@media(min-width:768px){
+    .news-input{
+        width:50% ;
+    }
+}
+
+.About{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-top: 170px;
+}
+
+.btn1{
+    background-color:transparent;
+    height: 50px;
+    width: 15%;
+    text-align: center;
+    border: 1px blue  solid;
+    border-radius: 10px;
+}
+
+.btn1 a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.btn1:hover{
+   background-color: blue;
+}
+
+.footerx{
+    background-color:#698ad1;
+    height: 70px;
+    color: white;
+}
+
+
+.nav-item a{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+a:hover{
+    color: blue;
+}
+
+.About{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: lighter;
+    line-height: 2.5rem;
+    font-size: 29px;
+}
