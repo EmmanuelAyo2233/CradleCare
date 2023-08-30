@@ -10,13 +10,17 @@ include('connection.php');
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/cradlecare1.jpg">
     <title>CradleCare | Add Patientss</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="cradlecare.css">
     <!--[if lt IE 9]>
 		<script src="assets/js/html5shiv.min.js"></script>
 		<script src="assets/js/respond.min.js"></script>
@@ -24,12 +28,61 @@ include('connection.php');
 </head>
 
 <body>
+<nav class="navbar navbar-expand-lg bg-light navbar-dark py-0">
+      <div class="container">
+          <a href="#" class="navbar-brand text-dark"><img style="width: 100px;" src="images/logo.png" alt=""></a>
+
+          <button 
+          class="navbar-toggler bg-primary" 
+          type="button" 
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          >
+
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+
+          <div class="collapse navbar-collapse" id="navmenu">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a href="cradlecare.html" class="nav-link text-dark ">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="#" class="nav-link text-dark">About</a>
+                  </li>
+
+                  
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">Blog</a>
+                </li>
+
+
+                  <li class="nav-item">
+                      <a href="#" class="nav-link text-dark">Login</a>
+                  </li>
+              </ul>
+
+              
+            <ul class="navabar-nav ms-auto">
+              <button class="btn btn-outline-primary  btn-lg text-dark text-center " style="margin-top: 20px;">
+                <a href="contact.html" style="text-decoration: none; color: black; ">
+                    Contact Us</a></button>
+            </ul>
+          </div>
+      </div>
+</nav>
+
+
+
     <div class="main-wrapper mt-5">
       
         <div class="container mt-5">
             <div class="content">
                 <div class="row">
-                    <div class="col-lg-12 mt-5 mb-5 text-center">
+                    <div class="col-lg-12 mt-2 mb-5 text-center">
                         <img src="./images/logo.png" alt="Logo" style="width:180px">
                         <!-- <h4 class="page-title">Sign Up</h4> -->
                     </div>
@@ -382,6 +435,8 @@ include('connection.php');
 	<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </body>
 
 

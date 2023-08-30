@@ -5,7 +5,7 @@
  <div class="header" >
 			<div class="header-left">
 				<a href="index.php" class="logo">
-					<img src="images/logo.png" width="35" height="35" alt=""> <span>CradleCare</span>
+					<img src="images/cradlecare1.jpg" width="65" height="55" alt=""> <span>CradleCare</span>
 				</a>
 			</div>
 			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
