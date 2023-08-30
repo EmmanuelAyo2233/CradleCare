@@ -282,6 +282,51 @@ if(isset($_POST['ref']))
 					<?php
 					}
 }
+//Add immunization ...............................................................................................
+if(isset($_POST['Add-button']))
+{
+	$firstname = validate_data($_POST['fname']);
+	$lastname = validate_data($_POST['lname']);
+	$name = $firstname." ".$lastname;
+	$email = validate_data($_POST['email']);
+	$password = validate_data($_POST['password']);
+	$dob = validate_data($_POST['dob']);
+	$gender = validate_data($_POST['gender']);
+	$address = validate_data($_POST['address']);
+	$gynotype = validate_data($_POST['gynotype']);
+	$blood_group = validate_data($_POST['bloodgroup']);
+	$phone_no = validate_data($_POST['phone']);
+	
+	$note = validate_data($_POST['note']);
+	$next_of_kin_phone = validate_data($_POST['phone_k']);
+	$status= validate_data($_POST['status']);
+	$join_date = date('d/m/Y');
+	
+	$getid = "SELECT id FROM immunization ORDER BY patient_id  DESC LIMIT 1";
+	$run = mysqli_query($connect,$getid);
+	
+	if($run)
+	{
+		
+		while($row = mysqli_fetch_assoc($run))
+		{
+			$id = (int)$row['patient_id']+1;
+		}
+	}
+
+	$sql = "INSERT INTO immunization(patient_id,name,email,password,gender,dob,phone_no,genotype,blood,address,note,date_created,status)
+	VALUES('$id','$name','$email','$password','$gender','$dob','$phone_no','$gynotype','$blood_group','$address','$note','$join_date',$status)";
+	$res = mysqli_query($connect,$sql);
+	if($res)
+				{
+				?>
+				<script>
+				alert("Added Successfully");
+				window.location.href="patients.php";
+				</script>
+				<?php
+				}
+}
 
 //Add Patients ...............................................................................................
 if(isset($_POST['addpatient']))
