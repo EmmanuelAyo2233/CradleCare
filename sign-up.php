@@ -50,18 +50,18 @@ include('connection.php');
                       <a href="cradlecare.html" class="nav-link text-dark ">Home</a>
                   </li>
 
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                       <a href="#" class="nav-link text-dark">About</a>
                   </li>
 
                   
                   <li class="nav-item">
                     <a href="#" class="nav-link text-dark">Blog</a>
-                </li>
+                </li> -->
 
 
                   <li class="nav-item">
-                      <a href="#" class="nav-link text-dark">Login</a>
+                      <a href="login.php" class="nav-link text-dark">Login</a>
                   </li>
               </ul>
 
